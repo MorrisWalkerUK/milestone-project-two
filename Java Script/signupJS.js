@@ -43,7 +43,7 @@ function validPassword () {
         if ( /(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test( pass ) == false )
         {
             wrong();
-            document.getElementById( "result" ).innerHTML = "Password should contain Uppercase, lowercase, and numeric charcaters. ";
+            document.getElementById( "result" ).innerHTML = "Password should contain Uppercase, lowercase, and numeric characters. ";
             return false;
         }
         else
