@@ -33,7 +33,7 @@ function validPassword () {
     if ( pass.length < 6 )
     {
         wrong();
-        document.getElementById( "result" ).innerHTML = "Password should contain atleast 6 characters.";
+        document.getElementById( "result" ).innerHTML = "Password should contain at least 6 characters";
         document.getElementById( "password" ).focus();
         document.getElementById( "password" ).style.border = "2px solid red";
         return false;
