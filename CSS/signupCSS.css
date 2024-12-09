@@ -51,9 +51,9 @@ input[type="checkbox"]{
     height:20px;
     width:20px;
 }
-span{
+/* span{
     
-}
+} */
 input[type="checkbox"]:checked{
     width:20px;
     transition: width 0.5s;

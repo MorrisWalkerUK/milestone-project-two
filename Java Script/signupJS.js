@@ -17,7 +17,7 @@ function validUserName () {
     if ( /\s/.test( username ) )
     {
         wrong();
-        document.getElementById( "result" ).innerHTML = "User name must not contain any space.";
+        document.getElementById( "result" ).innerHTML = "User name must not be blank";
         document.getElementById( "username" ).focus();
         return false;
     }
@@ -43,7 +43,7 @@ function validPassword () {
         if ( /(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[\w!@#$%^&*]{8,}$/.test( pass ) == false )
         {
             wrong();
-            document.getElementById( "result" ).innerHTML = "Password should contain Uppercase, lowercase, and numeric characters. ";
+            document.getElementById( "result" ).innerHTML = "Password should contain Uppercase, lowercase, a numeric character and a special character";
             return false;
         }
         else
@@ -61,7 +61,7 @@ function cnfrmPass () {
     if ( pass1 != pass2 )
     {
         wrong();
-        document.getElementById( "result" ).innerHTML = "Confirm Password must be same as the Password.";
+        document.getElementById( "result" ).innerHTML = "Confirm Password must be same as the first Password";
         document.getElementById( "confirmPassword" ).focus();
         document.getElementById( "confirmPassword" ).blur();
         return false;
@@ -76,7 +76,7 @@ function cnfrmPass () {
         }
         else
         {
-            document.getElementById( "result" ).innerHTML = "There is something wrong in the form.";
+            document.getElementById( "result" ).innerHTML = "There is something wrong in the form";
             document.getElementById( "tnc" ).checked = false;
             return false;
         }
