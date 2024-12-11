@@ -1,6 +1,6 @@
 function goto () {
     document.getElementById( "paybtn" ).style.borderStyle = "inset";
-    if (document.getElementById("billno").value.length==0||document.getElementById("rupee").value.length==0)
+    if (document.getElementById("billno").value.length==0||document.getElementById("amount").value.length==0)
     {   
         document.getElementById( "error" ).innerHTML = "Above Fields are blank.";
         document.getElementById( "error" ).style.color = "red";

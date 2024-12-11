@@ -44,7 +44,7 @@ function validCard () {
 }
 
 function goto () {
-    var rupee = document.getElementById( "rupee" ).value.length;
+    var rupee = document.getElementById( "amount" ).value.length;
     var name = document.getElementById( "name" ).value.length;
     if ( validAcc() == true && validCard() == true && rupee == 0 && name == 0 )
     {
