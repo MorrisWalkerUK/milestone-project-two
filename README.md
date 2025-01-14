@@ -1,131 +1,147 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Milestone Project Two
 
-Welcome Morris Walker,
+A mini project to focus on demonstating the use of JiraScript (JS).  A simple set of banking capabilities are used to show logon validation and account validation.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Live Demo (if applicable): Provide a link to the live project.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+Repository Link: Include a link to the GitHub repository.
 
-## Gitpod Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Introduction
 
-`python3 -m http.server`
+User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+1. Target Audience
+1. User Stories
+1. Design Choices
 
-Another blue button should appear to click: _Open Browser_.
+### Features
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+1. Core Features
+1. Future Features
 
-A blue button should appear to click: _Make Public_,
+### Technologies Used
 
-Another blue button should appear to click: _Open Browser_.
+1. Languages
+1. Frameworks & Libraries
+1. Tools & APIs
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Testing
 
-To log into the Heroku toolbelt CLI:
+1. Manual & Automated Testing
+1. Validation
+1. Known Bugs
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Deployment
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+1. Steps to Deploy
+1. Hosting Details
 
-### Connecting your Mongo database
+### Credits
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+1. Code Sources
+1. Media
+1. Acknowledgments
 
-------
+### 1. Introduction
 
-## Release History
+The project focuses on demonstrating the use of JavaScript to complete complex validation.  A couple of simple banking processes are used that most people should be able to easily relate to.  The logon process needs to ensure a password is reasonably complex including a Capital letter, lowercase letters, digits and special characters and be of a reasonable length.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### 2. User Experience (UX)
 
-**June 18, 2024,** Add Mongo back into template
+The user experience is to ensure an adequate password is used.  Error messaging will give the user clues on what the minimal requirement is.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+#### Target Audience
 
-**May 28 2024:** Fix Mongo and Links installs
+Passwording is a universal requirement for beginners and experienced users.  The process is kept as simple as possible and with sufficient error messaging to the user when the password does not meet the minimum requirement of a password.
 
-**April 26 2024:** Update node version to 16
+#### User Stories
 
-**September 20 2023:** Update Python version to 3.9.17.
+Create a table or list of user stories. For each story, include:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+As a/an [user type]: What type of user is this?
+I want to: State the goal or feature the user desires.
+So that I can: Describe the benefit the user will gain.
+Design Choices
+Summarize your design decisions, including:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Colour Scheme: Not focused on for this demonstration.
+Typography: Not considered important for this demonstation.
+Imagery: Not focused on for this demonstation.
+Wireframes: Not necessary for this simple demonstation.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### 3. Features
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Core Features
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Password validation.  Required in all modern applications.  Its purpose is to prevent unwanted users viewing and/or amending a users private information.  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The password is sufficiently complex to avoid unwanted users guessing what it is.  Historically own name was commonly used such as Morris,  later a number was deemed important, this became Morris1.  So it was easy for an unwanted user to guess a password.  
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Today the most common requirement is to insist on at least one capital letter, some lowercase letters, at least one number and at least one special character and a minimum length.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### Future Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Passwording is constantly under review, usually due to unwanted users find ways of identifying passwords.  There are solutions that use very random passwords but they need to be saved to be reused.  Other techniques include finger prints  and reading eye cornea.  We have to hope there is eventually a single safe way of identifying a person.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### 4. Technologies Used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Languages
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The focus is on JavaScript.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+HTML and CSS are also used.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Frameworks & Libraries
 
-------
+The only framework and libraries used are the standard ones provided by the Code Institute for students.
 
-## FAQ about the uptime script
+#### Tools & APIs
 
-**Why have you added this script?**
+This has been a simple programming excercise to focus on JavaScript.  No additional tools or API's were used.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### 5. Testing
 
-**How will this affect me?**
+#### Manual & Automated Testing
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+All testing was done manually using negative tests first, which are designed to cause a fail, for example no capital letter, no numbers, no special characters and too short.  Secondly positive tests were made to ensure a pass was achieved by providing the correct combination of characters to meet the validation rules created using JavaScript.  
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+No automated tests were written.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### Validation
 
-**So….?**
+Mention tools or validators used for:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+HTML
+CSS
+JavaScript
+Other relevant code
 
-**Can I opt out?**
+#### Known Bugs
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The code has been successfully tested.  No workarounds are required.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### 6. Deployment
 
-**Anything more?**
+#### Steps to Deploy
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Provide a clear, step-by-step guide to deploy the project. Include details about hosting platforms, configuration, and deployment tools.
 
----
+#### Hosting Details
 
-Happy coding!
+Explain where the project is hosted (e.g., Heroku, GitHub Pages) and include any additional details about how it is accessed.
+
+### 7. Credits
+
+#### Code Sources
+
+Acknowledge tutorials, articles, or external code snippets that you used.
+
+#### Media
+
+List sources of media (e.g., images, videos) and provide proper attribution.
+
+#### Acknowledgments
+
+Thank individuals, mentors, or communities who helped with the project.
