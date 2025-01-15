@@ -6,6 +6,93 @@
         <link href="../CSS/homeCSS.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <!-- <script src="../Java Script/homeJS.js"></script> -->
+
+        <style>
+            /* Basic responsive styling */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                box-sizing: border-box;
+            }
+    
+            #header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em;
+                background: #f2f2f2;
+            }
+    
+            #header a {
+                display: block;
+                max-width: 150px; /* Adjust as needed */
+            }
+    
+            /* Use viewport width for scaling the font-size */
+            #header h1 {
+                margin: 0;
+                font-size: 4vw; /* Scales based on the viewport width */
+            }
+    
+            #header img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 1em;
+            }
+    
+            /* Container for the form */
+            form {
+                max-width: 90%;
+                width: 400px;
+                margin: 2em auto;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            form input, form select, form button {
+                width: 100%;
+                padding: 0.75em;
+                margin-bottom: 1em;
+                font-size: 1em;
+            }
+    
+            form label {
+                margin-bottom: 0.5em;
+            }
+    
+            #result {
+                margin-bottom: 1em;
+                font-weight: bold;
+                color: #333;
+            }
+    
+            /* Center the subheading */
+            h1 {
+                text-align: center;
+            }
+    
+            /* Responsive adjustments for smaller screens */
+            @media (max-width: 600px) {
+                #header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                #header a {
+                    margin-top: 1em;
+                    max-width: 100px; /* Smaller logo on mobile if desired */
+                }
+    
+                #header h1 {
+                    font-size: 6vw;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -14,37 +101,17 @@
             <a href="home.html"><img src="../Images/logo.png" alt="Online Banking System"
                     title="Online Banking Website"></a>
         </div>
-        <div id="log_sign">
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-        </div>
+
         <div id="navbar">
             <div id="nav">
                 <div id="services">
-                    <li><a href="#">Services .</a></li>
-                    <nav class="content">
-                        <li><a href="perIntBank.html">Personal Internet Banking</a></li>
-                        <li><a href="corpBank.html">Corporate Banking</a></li>
-                        <li><a href="merBusiness.html">Merchant Business</a></li>
-                        <li><a href="onlTax.html">Online Tax</a></li>
-                    </nav>
-                </div>
-                <div id="payment_transfer">
-                    <li><a href="#">Payment Transfer .</a></li>
-                    <nav class="content">
-                        <li><a href="intTransfer.html">International Transfer</a></li>
-                        <li><a href="natTransfer.html">National Transfer</a></li>
-                        <li><a href="billPay.html">Bill Payment</a></li>
-                    </nav>
+                    <li><a href="home.html">Home</a></li>
                 </div>
                 <div id="fixed_deposite">
-                    <li><a href="fixDep.html">Fixed Deposite</a></li>
+                    <li><a href="fixDep.html">Deposit Money</a></li>
                 </div>
-                <div id="e_service">
-                    <li><a href="eServ.html">E - Services</a></li>
-                </div>
-                <div id="acc">
-                    <li><a href="acc.html">My Account</a></li>
+                <div id="about">
+                    <a href="aboutUs.html">About Us</a>
                 </div>
             </div>
         </div>
@@ -99,9 +166,7 @@
                 <input type="text" disabled name="ifsc" id="ifsc" value="" placeholder="IFSC Code">
             </div>
         </div>
-        <div id="foot">
-            <a href="aboutUs.html">About Us</a>
-        </div>
+
     </body>
 
 </html>
