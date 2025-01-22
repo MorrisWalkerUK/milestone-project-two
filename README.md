@@ -10,6 +10,18 @@ Repository Link: Include a link to the GitHub repository.
 
 ### Introduction
 
+Home Screen
+
+https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0
+
+Sign Up Screen
+
+https://www.dropbox.com/s/ibkpo6ihx99w4l1/Screenshot%202025-01-22%20at%2015.14.22.png?dl=0
+
+Fixed Deposit Screen
+
+https://www.dropbox.com/s/pno0hxz4ludq2tx/Screenshot%202025-01-22%20at%2015.16.32.png?dl=0
+
 User Experience (UX)
 
 1. Target Audience
