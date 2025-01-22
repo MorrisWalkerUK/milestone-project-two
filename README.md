@@ -12,17 +12,33 @@ Repository Link: Include a link to the GitHub repository.
 
 Home Screen
 
-[![Home Screen]](https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)
+<img
+  src="![https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)"]
+  alt="Home Screen"
+  title="Home Screen"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+
 
 Sign Up Screen
 
-[![Sign Up Screen]](https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)
-https://www.dropbox.com/s/ibkpo6ihx99w4l1/Screenshot%202025-01-22%20at%2015.14.22.png?dl=0)
+<img
+  src="![https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)
+https://www.dropbox.com/s/ibkpo6ihx99w4l1/Screenshot%202025-01-22%20at%2015.14.22.png?dl=0]
+  alt="Sign Up Screen"
+  title="Sign Up Screen"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 
 Fixed Deposit Screen
 
-[![Fixed Deposit Screen]](https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)
-https://www.dropbox.com/s/pno0hxz4ludq2tx/Screenshot%202025-01-22%20at%2015.16.32.png?dl=0)
+<img
+  src="![https://www.dropbox.com/s/xgnxrmok5hidlaw/Screenshot%202025-01-22%20at%2015.12.45.png?dl=0)
+https://www.dropbox.com/s/pno0hxz4ludq2tx/Screenshot%202025-01-22%20at%2015.16.32.png?dl=0]
+  alt="Fixed Deposit Screen"
+  title="Fixed Deposit Screen"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 
 User Experience (UX)
 
