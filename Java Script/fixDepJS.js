@@ -44,9 +44,9 @@ function validCard () {
 }
 
 function goto () {
-    var rupee = document.getElementById( "amount" ).value.length;
+    var amount = document.getElementById( "amount" ).value.length;
     var name = document.getElementById( "name" ).value.length;
-    if ( validAcc() == true && validCard() == true && rupee == 0 && name == 0 )
+    if ( validAcc() == true && validCard() == true && amount == 0 && name == 0 )
     {
         document.getElementById( "result" ).innerHTML = "Some input fields have undesired values.";
 
